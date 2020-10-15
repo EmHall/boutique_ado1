@@ -1,6 +1,5 @@
-from django.contrib import admin
-from .models import Product, Category
+from django.apps import AppConfig
 
-# Register your models here.
-admin.site.register(Product)
-admin.site.register(Category)
+
+class ProductsConfig(AppConfig):
+    name = 'products'
